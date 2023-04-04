@@ -106,7 +106,12 @@
             })
         })
 
-
+    document.querySelector('#home button').addEventListener('click', function(e){
+            gtag({
+                click_text : e.target.innerText.toLowerCase(),
+                trigger_source : "gtag"    
+            });
+        })
     </script>
 </body>
 
