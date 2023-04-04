@@ -9,7 +9,15 @@
     <link rel="stylesheet" href="./style/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
         integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEEDZVXGBX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'G-KEEDZVXGBX');
+    </script>
     <title>Bootcamp Training</title>
 </head>
 <header>
@@ -31,7 +39,7 @@
         <div>
             <button onclick="alert('Get A Free Quote')">Get A Free Quote</button>
         </div>
-        
+
     </section>
 
     <section class="about" id="about">
@@ -47,7 +55,7 @@
     </section>
 
     <section class="contact" id="contact">
-        <form action="./thank_you_page.html" id="contact_form" name = "contact_form" >
+        <form action="./thank_you_page.html" id="contact_form" name="contact_form">
             <h1>Contact Form</h1>
             <input type="text" name="first" placeholder="First Name">
             <input type="text" name="last" placeholder="Last Name">
@@ -65,8 +73,8 @@
             <button type="submit">Submit</button>
         </form>
     </section>
-    
-    
+
+
     <footer>
         <div class="brand">
             <i class="bi bi-journal-bookmark-fill"></i>
@@ -80,20 +88,25 @@
         </div>
     </footer>
     <script>
-        
 
         var dataLayer = window.dataLayer || []
 
         document.contact_form.addEventListener('submit', function (e) {
             sessionStorage.setItem("form_name", "contact_form")
-            var encrypt =   CryptoJS.AES.encrypt(document.contact_form.email.value, "email");
+            var encrypt = CryptoJS.AES.encrypt(document.contact_form.email.value, "email");
             window.dataLayer.push({
-                event : 'email_click',
-                hash : encrypt.toString()
+                event: 'email_click',
+                hash: encrypt.toString()
+            })
+            gtag('event', 'form_submission', {
+                form_name: "contact_form",
+                form_url : "/thank_you_page.html",
+                form_id:"contact_form",
+                form_click_text: "submit"
             })
         })
 
-        
+
     </script>
 </body>
 
