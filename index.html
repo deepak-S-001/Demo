@@ -16,15 +16,30 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'G-KEEDZVXGBX', {'debug_mode' : true});
+        gtag('config', 'G-KEEDZVXGBX', { 'debug_mode': true });
     </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-258379161-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-258379161-1');
+    </script>
+
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K7WC5MQ');</script>
-<!-- End Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K7WC5MQ');</script>
+    <!-- End Google Tag Manager -->
+    
     <title>Bootcamp Training</title>
 </head>
 <header>
@@ -107,16 +122,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             })
             gtag('event', 'form_submission', {
                 form_name: "contact_form",
-                form_url : "/thank_you_page.html",
-                form_id:"contact_form",
+                form_url: "/thank_you_page.html",
+                form_id: "contact_form",
                 form_click_text: "submit"
             })
         })
 
-    document.querySelector('#home button').addEventListener('click', function(e){
-            gtag('event','button_click',{
-                click_text : e.target.innerText.toLowerCase(),
-                trigger_source : "gtag"    
+        document.querySelector('#home button').addEventListener('click', function (e) {
+            gtag('event', 'button_click', {
+                click_text: e.target.innerText.toLowerCase(),
+                trigger_source: "gtag"
             });
         })
     </script>
