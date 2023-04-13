@@ -39,7 +39,7 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-K7WC5MQ');</script>
     <!-- End Google Tag Manager -->
-    
+
     <title>Bootcamp Training</title>
 </head>
 <header>
@@ -133,6 +133,14 @@
                 click_text: e.target.innerText.toLowerCase(),
                 trigger_source: "gtag"
             });
+        })
+
+        document.querySelector('#home > div > button').addEventListener('click', function (e) {
+            window.dataLayer.push({
+                event: "banner_click",
+                clcik_text: e.target.innerText,
+                click_title: "Analytic Implementation Bootcamp Training 2023"
+            })
         })
     </script>
 </body>
