@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/blog.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEEDZVXGBX"></script>
@@ -14,20 +18,34 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'G-KEEDZVXGBX', {'debug_mode' : true});
+        gtag('config', 'G-KEEDZVXGBX', { 'debug_mode': true });
     </script>
-     <!-- Google Tag Manager -->
-     <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-K7WC5MQ');</script>
-<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K7WC5MQ');</script>
+    <!-- End Google Tag Manager -->
+    <script>
+        window.dataLayer = dataLayer || []
+        window.dataLayer.push({
+            event: "page_view",
+            pageCategory: "Home"
+
+        })
+        window.dataLayer.push({
+            event: "author_info",
+            aurthor_name: "Deepak",
+            theme: "photography",
+        })
+    </script>
     <title>Blog</title>
 </head>
+
 <body>
     <header>
         <div>
@@ -46,10 +64,17 @@
 
     <div class="about" id="about">
         <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur provident hic, illum perferendis fugit sequi suscipit, sunt, voluptate rem beatae laudantium architecto amet atque! Culpa inventore veniam amet! Dolorum, fugit. 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloremque quisquam ipsam quaerat velit quia at tempore, id harum culpa impedit exercitationem, possimus in maiores perferendis et saepe dicta expedita?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quia dicta tempora. Suscipit accusamus obcaecati praesentium ab rerum ducimus animi eum quam! Explicabo delectus dolore nulla tempora obcaecati dolorum rerum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odit deserunt nobis voluptas, inventore magni quam esse harum debitis quos mollitia reprehenderit! Possimus adipisci neque inventore qui harum minima dignissimos?
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur provident hic, illum perferendis fugit sequi
+            suscipit, sunt, voluptate rem beatae laudantium architecto amet atque! Culpa inventore veniam amet! Dolorum,
+            fugit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloremque quisquam ipsam quaerat velit quia
+            at tempore, id harum culpa impedit exercitationem, possimus in maiores perferendis et saepe dicta expedita?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quia dicta tempora. Suscipit
+            accusamus obcaecati praesentium ab rerum ducimus animi eum quam! Explicabo delectus dolore nulla tempora
+            obcaecati dolorum rerum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odit deserunt nobis voluptas, inventore magni
+            quam esse harum debitis quos mollitia reprehenderit! Possimus adipisci neque inventore qui harum minima
+            dignissimos?
         </p>
     </div>
 
@@ -59,65 +84,95 @@
             <div class="card m-1" style="width: 18rem;">
                 <img src="./images/1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                 </div>
             </div>
-    
+
             <div class="card m-1" style="width: 18rem;">
                 <img src="./images/2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                 </div>
             </div>
-    
+
             <div class="card m-1" style="width: 18rem;">
                 <img src="./images/3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                 </div>
             </div>
-    
+
             <div class="card m-1" style="width: 18rem;">
                 <img src="./images/4.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                 </div>
             </div>
             <div class="card m-1" style="width: 18rem;">
                 <img src="./images/5.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                 </div>
             </div>
 
             <div class="card m-1" style="width: 18rem;">
                 <img src="./images/bg.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                 </div>
             </div>
 
             <div class="card m-1" style="width: 18rem;">
                 <img src="./images/6.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                 </div>
             </div>
 
             <div class="card m-1" style="width: 18rem;">
                 <img src="./images/7.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                 </div>
             </div>
         </div>
     </div>
-     <script>
+    <script>
         gtag('event', 'blog_view', {
-            page_name:'blog',
-            trigger_source : 'gtag',
-            page_referrer : document.referrer
+            page_name: 'blog',
+            trigger_source: 'gtag',
+            page_referrer: document.referrer
+        })
+    </script>
+    <script>
+        document.querySelectorAll('body > header > nav > a').forEach(function (ele) {
+            ele.addEventListener('click', function (e) {
+                window.dataLayer.push({
+                    event: "header_navigation",
+                    click_text: e.target.innerText,
+                    click_url: e.target.getAttribute('href')
+                })
+            })
+        })
+        document.querySelectorAll('.card').forEach(function (node) {
+            node.addEventListener("click", function (e) {
+                var data = e.target.closest('.card')
+                window.dataLayer.push({
+                    event: "gallery_card_click",
+                    img_url: data.querySelector('img').getAttribute('src'),
+                    card_text: data.querySelector('p').innerText
+                })
+            })
         })
     </script>
 </body>
+
 </html>
