@@ -1,0 +1,103 @@
+{
+    "events": [
+      {
+        "event_name": "page_view",
+        "event_type": "standard",
+        "event_description": "It will trigger once the page will be loaded",
+        "event_conversion": "false",
+        "event_group": "leadgen"
+      },
+      {
+        "event_name": "contact_us",
+        "event_type": "custom",
+        "event_description": "Triggered when a user clicks a 'Contact Us' button.",
+        "event_conversion": "false",
+        "event_group": "leadgen"
+      },
+      {
+        "event_name": "social_share",
+        "event_type": "custom",
+        "event_description": "Event fires when user clicks on social media icon - share clicks",
+        "event_conversion": "false",
+        "event_group": "leadgen"
+      },
+      {
+        "event_name": "social_click",
+        "event_type": "custom",
+        "event_description": "Event fires when user clicks on social media clicks",
+        "event_conversion": "false",
+        "event_group": "leadgen"
+      },
+      {
+        "event_name": "scroll",
+        "event_type": "standard",
+        "event_description": "Event fires when user scrolls on the page",
+        "event_conversion": "false",
+        "event_group": "leadgen"
+      },
+      {
+        "event_name": "footer_navigation",
+        "event_type": "custom",
+        "event_description": "Event fires when the user clicks footer links",
+        "event_conversion": "false",
+        "event_group": "leadgen"
+      },
+      {
+        "event_name": "click_to_call",
+        "event_type": "custom",
+        "event_description": "Event fires when user clicks on phone number",
+        "event_conversion": "false",
+        "event_group": "leadgen"
+      },
+      {
+        "event_name": "header_navigation",
+        "event_type": "custom",
+        "event_description": "Event fires when user clicks on links on the page header",
+        "event_conversion": "false",
+        "event_group": "leadgen"
+      },
+      {
+        "event_name": "search_result_click",
+        "event_type": "custom",
+        "event_description": "This event will fire on the click on search results",
+        "event_conversion": "false",
+        "event_group": "leadgen"
+      },
+      {
+        "event_name": "logo_click",
+        "event_type": "custom",
+        "event_description": "It will fire on the click of logo",
+        "event_conversion": "false",
+        "event_group": "leadgen"
+      },
+      {
+        "event_name": "form_view",
+        "event_type": "custom",
+        "event_description": "This event typically signifies that a form has been loaded and is now visible to the user.",
+        "event_conversion": "false",
+        "event_group": "leadgen"
+      },
+      {
+        "event_name": "form_initiate",
+        "event_type": "custom",
+        "event_description": "This event indicates the initiation or starting of a form interaction.",
+        "event_conversion": "false",
+        "event_group": "leadgen"
+      },
+      {
+        "event_name": "form_fallout",
+        "event_type": "custom",
+        "event_description": "This event usually refers to users abandoning or exiting the form before completing it.",
+        "event_conversion": "false",
+        "event_group": "leadgen"
+      },
+      {
+        "event_name": "form_submit",
+        "event_type": "custom",
+        "event_description": "This event is triggered when a form is submitted.",
+        "event_conversion": "true",
+        "event_group": "leadgen"
+      }
+    ]
+  }
+  
